@@ -1,0 +1,145 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="contact.css">
+<title>Food</title>
+
+</head>
+<body>
+
+<div class="header">
+<img src="D:\RAGINI\Web Developement\TEMPLATE\forkspoon.jpg" style="height:100%;width:20%;margin-left:15%;opacity:1"/>
+
+<img src="D:\RAGINI\Web Developement\TEMPLATE\forkspoon.jpg" style="height:100%;width:20%;margin-left:30%;opacity:1"/>
+
+
+<p style="margin-left:38%;font-size:45px;font-style:Semi Expanded Italic Bold;font-family:Harlow Solid;
+margin-top:-7%">Dine With Us</p>
+</div><!--header-->
+
+
+<ul>
+ <li><a href="home.html">Home</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+<div class="div1">
+
+
+<form>
+<h1>Contact..</h1>
+<hr>
+<h2>Lets get in touch and talk about your next Order.</h2>
+<input type="text"  placeholder="Name" id="UN" style="height:4%;width:80%;font-size:19px"/>
+<br>
+<span id="un"></span>
+<br>
+<input type="text" name="FN" placeholder="E-mail"  id="MAIL" style="height:4%;width:80%;font-size:19px"/>
+<br>
+<span id="mail"></span>
+<br>
+<input type="text" name="FN" placeholder="Food Name" id="NM" style="height:4%;width:80%;font-size:19px"/>
+<br>
+<span id="nm"></span>
+<br>
+<input type="text" name="FN" placeholder="Comment" id="CM" style="height:4%;width:80%;font-size:19px"/>
+<br>
+<span id="cm"></span>
+<br><br>
+<button id="sbmit" style="height:3.5%;width:20%;font-size:20px;color:red;font-weight:bold">Send Message</button>
+</form>
+<hr>
+
+<div class="famous">
+<marquee><h2>FAMOUS  COOK</h2></marquee>
+
+</div><!--famous-->
+<div class="div3">
+<img src="D:\RAGINI\Web Developement\TEMPLATE\john.jpg" style="height:60%;width:60%;border-style:dashed"/>
+<br>
+<span style="margin-left:25%;font-weight:bold">JOHN</span>
+<br>
+<br>
+<button style="font-size:18px;color:red;font-weight:bold;
+margin-left:19%">Contact</button>
+</div><!--div3-->
+
+
+<div class="div4">
+<img src="D:\RAGINI\Web Developement\TEMPLATE\jane.jpg" style="height:60%;width:60%;border-style:dashed"/>
+<br>
+<span style="margin-left:25%;font-weight:bold">JANE</span>
+<br>
+<br>
+<button style="font-size:18px;color:red;font-weight:bold;
+margin-left:19%">Contact</button>
+</div><!--div4-->
+
+<div class="div5">
+<img src="D:\RAGINI\Web Developement\TEMPLATE\mike.jpg" style="height:60%;width:60%;border-style:dashed"/>
+<br>
+<span style="margin-left:25%;font-weight:bold">MIKE</span>
+<br>
+<br>
+<button style="font-size:18px;color:red;font-weight:bold;
+margin-left:19%">Contact</button>
+</div><!--div5-->
+<br><br><br>
+
+
+</div><!--div1-->
+
+
+<div class="footer">
+<a href="http://www.gmail.com"><img src="D:\RAGINI\Web Developement\TEMPLATE\mail.png"/ style="margin-left:73%;opacity:1"></a><span style="font-size:20px;margin-left:6px">ramrutkar@gmail.com.</span>
+<br>
+<img src="D:\RAGINI\Web Developement\TEMPLATE\phone.png"/ style="margin-left:73%;opacity:1"><span style="font-size:20px;margin-left:6px">8954126242.</span>
+<br>
+<img src="D:\RAGINI\Web Developement\TEMPLATE\home.png"/ style="margin-left:73%;opacity:1"><span style="font-size:20px;margin-left:6px">M.J.Road, Mumbai-421568.</span>
+
+</div><!--footer-->
+
+<script>
+$(document).ready(function()
+{
+$('#sbmit').click(function()
+{
+var name=$('#UN').val();
+var mail=$('#MAIL').val();
+var date=$('#NM').val();
+var cmnt=$('#CM').val();
+if(name=="")
+{
+$('#un').html('Must be filled');
+return false;
+}
+
+if(mail=="")
+{
+$('#mail').html('Must be Filled');
+$('#mail').css('color','red');
+return false;
+}
+
+if(date=="")
+{
+$('#nm').html('must be filled');
+$('#nm').css('color','blue');
+return false;
+}
+
+if(cmnt=="")
+{
+$('#cm').html('must be filled');
+$('#cm').css('color','orange');
+return false;
+}
+});
+});
+
+
+
+</script>
+</body>
+</html>
